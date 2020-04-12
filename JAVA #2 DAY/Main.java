@@ -3,29 +3,33 @@
 
 class Main {
   public static void main(String[] args) {
+// 문제 : 아래와 같이 출력해주세요.
+// 문제 : 단을 * 1000까지 출력해주세요.
     int dan = 8;
     
-    // 수정가능지역 시작
     int i = 1;
     
     System.out.println(dan + " * " + i + " = " + dan * i);
-    i = i + 1;
-    System.out.println(dan + " * "+ i + " = " + dan * i);
-    i = i + 1;
-    System.out.println(dan + " * "+ i +" = " + dan * i);
-    i = i + 1;
-    System.out.println(dan + " * "+ i +" = " + dan * i);
-    i = i + 1;
-    System.out.println(dan + " * "+ i +" = " + dan * i);
-    i = i + 1;
-    System.out.println(dan + " * "+ i +" = " + dan * i);
-    i = i + 1;
-    System.out.println(dan + " * "+ i +" = " + dan * i);
-    i = i + 1;
-    System.out.println(dan + " * "+ i +" = " + dan * i);
-    i = i + 1;
-    System.out.println(dan + " * "+ i +" = " + dan * i);
-    // 수정가능지역 끝
+    i = i + 1; // i 의 값을 1 증가 시킨다.
+    System.out.println(dan + " * " + i + " = " + dan * i);
+    i += 1; // i 의 값을 1 증가 시킨다.(단축표현)
+    System.out.println(dan + " * " + i + " = " + dan * i);
+    i++; // i 의 값을 1 증가 시킨다.(단축표현)
+    System.out.println(dan + " * " + i + " = " + dan * i);
+    i++;
+    System.out.println(dan + " * " + i + " = " + dan * i);
+    i++;
+    System.out.println(dan + " * " + i + " = " + dan * i);
+    i++;
+    System.out.println(dan + " * " + i + " = " + dan * i);
+    i++;
+    System.out.println(dan + " * " + i + " = " + dan * i);
+    i++;
+    System.out.println(dan + " * " + i + " = " + dan * i);
+    i++;
+    System.out.println("....");
+    i = 1000;
+    System.out.println(dan + " * " + i + " = " + dan * i);
     
     // 출력
     /*
@@ -38,6 +42,8 @@ class Main {
     8 * 7 = 56
     8 * 8 = 64
     8 * 9 = 72
+    ...
+    8 * 1000
     */
   }
 }
