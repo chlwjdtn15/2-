@@ -5,6 +5,10 @@ class Main {
   public static void main(String[] args) {
 // 문제 : 아래와 같이 출력해주세요.
 // 문제 : 단을 * 1000까지 출력해주세요.
+    
+    /*
+    1st Try
+
     int dan = 8;
     
     int i = 1;
@@ -30,7 +34,30 @@ class Main {
     System.out.println("....");
     i = 1000;
     System.out.println(dan + " * " + i + " = " + dan * i);
+    */
+
+
+  /*
+   int dan = 8;
     
+    int i = 1;
+    
+
+    // if 와 while을 배우다.
+    // ++ 의 개념도 배우다. 더하기나 빼기 하고싶은면 (a + b) 식으로 가로안에 넣어야됨 (곱하기 나누기는 상관없음).
+
+    while ( i <=2 ){
+      System.out.println(i); // 1, 2
+      i++;
+    }
+    System.out.println(i); // 3
+
+    i = 0;
+
+    while ( i <= 1000 ){
+      System.out.println(dan + " * " + i + " = " + dan * i);
+      i++;
+    }
     // 출력
     /*
     8 * 1 = 8
@@ -45,5 +72,45 @@ class Main {
     ...
     8 * 1000
     */
+
+  // 문제 : 아래와 같이 출력해주세요.
+  // 문제 : 단을 `* 1000`부터 `* -500`까지 출력해주세요.
+/*
+    int dan = 8;
+    
+    int i = 1;
+
+    while ( i <= 1000 ){
+      System.out.println(dan + " * " + i + " = " + dan * i);
+      i++;
+    }
+
+    while ( i >= -500){
+      System.out.println(dan + " * " + i + " = " + dan * i);
+      i--;
+    }
+  */
+    int sum = 0;
+    int i = 1;
+    // 1 부터 5까지 더하기. += && -= 배우기 
+    while (i <= 5)
+    {
+      sum = sum += i;
+      
+      i ++;
+    }
+    System.out.println(sum);
+    // 출력
+    /*
+    8 * 1000 = 8000
+    ...
+    8 * -500 = -4000
+    */
   }
 }
+
+/*
+변수(선언, 사용)
+함수 printl
+반복문
+*/
